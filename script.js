@@ -2,7 +2,7 @@ const botao = document.getElementById("calcular")
 const fim = document.getElementById("fim")
 // sempre prestar atenção em qual input puxar o ID.
 botao.addEventListener("click", clicar)
-fim.addEventListener("click", finalizar)
+
 function clicar(){
     // função de mostrar a resposta e a quantidade de cédulas.
     let numero = document.getElementById("numero")
@@ -20,6 +20,7 @@ function clicar(){
     let ced1 = 0
         paragrafo.innerHTML = ""
         lista.innerHTML = ""
+        numero.focus()
 
     // previnir números "fantasmas:"
 
@@ -117,11 +118,10 @@ function clicar(){
         }
     }
     numero.value = ""
-     
+    fim.addEventListener("click", finalizar) 
     function finalizar(){
         calcular.style.display = 'none'
         paragrafo.innerHTML = ""
         lista.innerHTML = ""
-        innerFocus()
     }
 }
