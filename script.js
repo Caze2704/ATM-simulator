@@ -6,9 +6,10 @@ botao.addEventListener("click", clicar)
 function clicar(){
     // função de mostrar a resposta e a quantidade de cédulas.
     let numero = document.getElementById("numero")
+    const dado = Number(numero.value)
     let valor = Number(numero.value)
     let calcular = document.getElementById("res")
-    let paragrafo = document.getElementsByClassName("p")[0]
+    let paragrafo = document.getElementsByClassName("p")[1]
     let lista = document.getElementById("lista")
     let cedulas = 0
     let ced100 = 0
@@ -66,7 +67,7 @@ function clicar(){
         cedulas++
         valor = valor - 1
     }
-    paragrafo.innerHTML = `São ${cedulas} ao todo, sendo elas:` 
+    paragrafo.innerHTML = `<strong>${dado} R$ </strong><br> São ${cedulas} cédulas ao todo, sendo elas:` 
     }
     if(ced100 > 0){
         if(ced100 > 1){
