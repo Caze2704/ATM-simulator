@@ -64,6 +64,7 @@ Desenvolvimento Back-end
 👨‍💻 Autor
 
 Desenvolvido por Eduardo Henrique
+
 Estudante de Ciência e Tecnologia - UFRN
 
 🔗 LinkedIn: www.linkedin.com/in/eduardo-duarte-834294397
